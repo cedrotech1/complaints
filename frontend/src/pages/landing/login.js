@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
-import LoadingSpinner from '../../components/loading'; 
+import LoadingSpinner from '../../components/loading';
 
 import 'react-toastify/dist/ReactToastify.css'
 function App() {
@@ -12,7 +12,7 @@ function App() {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
-    
+
   });
 
   const [loading, setLoading] = useState(false);
@@ -46,7 +46,7 @@ function App() {
           await navigate('../customer');
         } else if (role === 'superadmin') {
           await navigate('../admin_Home');
-        } 
+        }
         else if (role === 'employee') {
           await navigate('../agency_Home');
         }
@@ -82,24 +82,21 @@ function App() {
               <div class="row">
                 <div class="col-lg-7 text-center text-lg-start">
                   <h1 data-aos="fade-right">SIGN IN HERE</h1>
+                  <p>Welcome back! Please enter your details to login.</p>
+                  {/* <p>If you don't have an account, please <a href="register">register here</a>.</p> */}
+                  <p>super admin credentials: superadmin@gmail.com password: 1234 (by default)</p>
 
-                  <form onSubmit={handleSubmit}  class="php-email-form">
-
+                  <form onSubmit={handleSubmit} class="php-email-form">
                     <div class="row">
                       <div class="col-md-12 form-group">
                         <label for="name">Name</label>
-                        <input type="email" name="email" class="form-control" id="name" required  onChange={handleChange}/>
+                        <input type="email" name="email" class="form-control" id="name" required onChange={handleChange} />
                       </div>
-                    
-
-                      <div class="col-md-12 form-group" style={{marginTop:'0.5cm',marginBottom:'0.5cm'}}>
+                      <div class="col-md-12 form-group" style={{ marginTop: '0.5cm', marginBottom: '0.5cm' }}>
                         <label for="name">Password</label>
                         <input type="password" name="password" class="form-control" id="name" required onChange={handleChange} />
                       </div>
-                     
-                    
-                    
-                      
+
                       <div class="col-md-12 mb-3">
                         <div class="loading">Loading</div>
                         <div class="error-message"></div>
@@ -107,12 +104,12 @@ function App() {
                       </div>
 
                       <div class="col-md-6 form-group">
-                      <button type="submit" style={{color:'white'}} className={`btn btn-primary d-block w-100 ${loading ? 'loading' : ''}`} disabled={loading}>
-              {loading ? <LoadingSpinner /> : 'login'}
-            </button>
+                        <button type="submit" style={{ color: 'white' }} className={`btn btn-primary d-block w-100 ${loading ? 'loading' : ''}`} disabled={loading}>
+                          {loading ? <LoadingSpinner /> : 'login'}
+                        </button>
                       </div>
                       <div class="col-md-6 form-group">
-                      <a href="register" >  <input type="button" class="btn btn-info d-block w-100" value="Back to register" /></a>
+                        <a href="register" >  <input type="button" class="btn btn-info d-block w-100" value="Back to register" /></a>
                       </div>
                     </div>
 
@@ -121,7 +118,7 @@ function App() {
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-4 iphone-wrap p-10">
-                  <img src="assets/img/lg1.png" alt="Image" class="phone-1" data-aos="fade-right" style={{ width: '100%',marginTop:'5cm',borderBottomLeftRadius:'150px'}} />
+                  <img src="assets/img/lg1.png" alt="Image" class="phone-1" data-aos="fade-right" style={{ width: '100%', marginTop: '5cm', borderBottomLeftRadius: '150px' }} />
                   {/* <img src="assets/img/phone_2.png" alt="Image" class="phone-2" data-aos="fade-right" data-aos-delay="200"/> */}
                 </div>
               </div>
