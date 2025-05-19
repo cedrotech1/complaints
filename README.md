@@ -1,12 +1,12 @@
 # Claims Management System
 
 A full-stack application for managing claims and complaints, built with React and Node.js. This system provides a comprehensive solution for submitting, tracking, and managing claims efficiently.
-in few words when syystem is used by system admin heard coded in seeds file (superadmin@gmail.com password 1234) and users from different gaverment agencies recorded by super admin and citizen who create account as normal
+In few words, when system is used by system admin (hard coded in seeds file - superadmin@gmail.com password 1234) and users from different government agencies recorded by super admin and citizens who create account as normal.
 
 
 ## 📋 Project Overview
 
-The Claims Management System is designed to streamline the process of handling citizen complaints and claims. It allows users to claim to different agencies and automatically all users on agency receive email and check your complain and reply, reject,approve it and when do so citizen receive email automatically, each user added by admin receive email directly say his password, but i make it simple password for added user by defout is 1234
+The Claims Management System is designed to streamline the process of handling citizen complaints and claims. It allows users to claim to different agencies and automatically all users on agency receive email and check your complaint and reply, reject, approve it and when do so citizen receive email automatically, each user added by admin receive email directly with their password, but I make it simple password for added user by default is 1234.
 
 1. **Submit Claims**
    - Create new claims with detailed information
@@ -98,6 +98,12 @@ For detailed backend documentation, see [Backend README](./backend/README.md)
 - Node.js (v14 or higher)
 - PostgreSQL
 - npm or yarn package manager
+
+### Production Links
+- Frontend: [https://complaints-five.vercel.app/](https://complaints-five.vercel.app/)
+- Backend documentation: [https://complaints-3h09.onrender.com/api/v1/docs](https://complaints-3h09.onrender.com/api/v1/docs)
+- Backend application base url: [https://complaints-3h09.onrender.com]
+
 
 ### Frontend Setup
 ```bash
